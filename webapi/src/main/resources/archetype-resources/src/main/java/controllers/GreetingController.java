@@ -10,9 +10,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class GreetingController extends ApiController {
 
+    private static final AtomicInteger counter = new AtomicInteger();
+
     @GET
-    public ApiResponse<Greeting> greeting(@Required String name) {
-        return ApiResponse.of(new Greeting(ShortID.randomID(), String.format("Hello, %s", name)));
+    public ApiResponse<Greeting> greeting(@Required @DefaultValue("World") String name) {
+        return ApiResponse.of(new Greeting(counter.incrementAndGet(), String.format("Hello, %s!", name)));
     }
 
 }
