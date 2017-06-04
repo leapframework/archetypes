@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dataapi/archetype-dataapi.iml" filepath="$PROJECT_DIR$/dataapi/archetype-dataapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/archetype-parent.iml" filepath="$PROJECT_DIR$/archetype-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/webapi/archetype-webapi-quickstart.iml" filepath="$PROJECT_DIR$/webapi/archetype-webapi-quickstart.iml" />
     </modules>
